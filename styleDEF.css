@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: red; */
+  font-family: "Raleway", sans-serif;
+}
+nav {
+  height: 12vh;
+}
+
+main {
+  position: relative;
+}
+.card-head {
+  margin-top: 10px;
+}
+.card-body {
+  font-size: 0.8rem;
+}
+.table > table {
+  font-size: 0.8rem;
+}
+.redRow:hover {
+  color: rgb(231, 38, 38);
+  background: #e0dbdb69;
+  cursor: pointer;
+}
+.greenRow:hover {
+  color: rgb(50, 201, 130);
+  background: #e0dbdb69;
+  cursor: pointer;
+}
+.blueRow:hover {
+  color: rgb(1, 4, 151);
+  background: #e0dbdb69;
+  cursor: pointer;
+}
+
+.card-header-div {
+  color: #fff;
+}
+.card-header {
+  background: #4e0000cb;
+}
+.card-header-div:hover {
+  color: #ddd;
+}
+
+.comp-btn-area {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.open-comp-btn {
+  padding: 0 5px;
+  border: 2px solid #cccbcb;
+}
+.open-comp-btn > a {
+  text-decoration: none;
+  color: black;
+}
+.open-comp-btn:hover {
+  background: #d7e8ba;
+  border: 2px solid #c6e494;
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.progress {
+  width: 200px;
+}
+.progress-bar {
+  background: #222;
+}
+.fa-star {
+  font-size: 0.7rem;
+}
+.fa-star-o {
+  font-size: 0.7rem;
+}
+.rating-color {
+  color: #610000de;
+}
+.five {
+  width: 40%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.four {
+  width: 25%;
+}
+.three {
+  width: 10%;
+}
+.two {
+  width: 15%;
+}
+.one {
+  width: 10%;
+}
+.review-slide {
+  font-size: 0.8rem;
+}
+#accordion {
+  display: flex;
+}
+#accordion2 {
+  display: flex;
+}

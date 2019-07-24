@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Search</title>
+</head>
+<body>
+    <nav>
+        <h1>Companies.Earth
+            <i id="globe"class="fa fa-globe" aria-hidden="true"></i>
+        </h1>
+        <div class="search">
+            <span id="location">
+                <select name="selectLocation" id="loc" >
+                <option value="null">Select Location</option>
+                <option value="Gurugram">Gurugram</option>
+                <option value="Noida">Noida</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+        </span>
+            <span id="categories">
+                    <select name="Category" id="cat" >
+                        <option value="null">Category</option>
+                        <option value="AI">AI</option>
+                        <option value="Cyber">Cyber Security</option>
+                        <option value="Web">Web Development</option>
+                    </select>
+            </span>
+            <span class="search-bar">
+            <form action="" autocomplete="on">
+                <input id="search" name="search" type="text" placeholder="Search by name...">
+                <button>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                
+            </span>
+        </div>
+    </nav>
+    <main class="searchMain">
+        <!-- <div class="card">
+        <table>
+            <thead>
+                <th>Company Name</th>
+                <th>Location</th>
+                <th>Category</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="abc.html">ABC</a></td>
+                    <td>Gurgaon</td>
+                    <td>Cyber Security</td>
+                </tr>
+                <tr>
+                    <td><a href="jkl.html">JKL</a></td>
+                    <td>Gurgaon</td>
+                    <td>AI</td>
+                </tr>
+                <tr>
+                    <td><a href="xyz.html">XYZ</a></td>
+                    <td>Gurgaon</td>
+                    <td>Web Development</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->
+    <div id="accordion" class="container">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        <div class="card-header-div">
+                        ABC
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Gurgaon</span>
+                          
+                              <span class="accordion-category pull-right">Artificial Intelligence</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+
+            </div>
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body" >
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse ipsum accusamus. Veniam facere earum fuga illo, impedit obcaecati nobis porro nihil vel natus eum corporis in harum laborum illum dolor nemo recusandae esse ullam eligendi iure. Voluptas, explicabo non.</p>
+                    
+                   <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                        <a href="abc.html" target="_blank">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                 <div class="card-header-div">
+                        DEF
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Gurgaon</span>
+                          
+                              <span class="accordion-category pull-right">Cyber Security</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur est molestiae, libero suscipit facilis minus! Illum quae est praesentium veniam voluptatum, eligendi quas voluptatibus culpa, porro rem error exercitationem reiciendis vel iusto dolore beatae accusamus eius neque minus eum modi. Distinctio dolorum ipsa minima praesentium perspiciatis nemo dignissimos? Id, in?</p>
+                    
+                   <span class="comp-btn-area">
+                      <button class="open-comp-btn ">
+                    
+                        <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseFive" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseSix" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseEight">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseEight" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseNine">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseNine" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTen">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseTen" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwelve">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseTwelve" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThirteen">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseThirteen" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFourteen">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseFourteen" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFifteen">
+                 <div class="card-header-div">
+                        XYZ
+                        <span class="accord-company-tag ">
+                              <span class="accordion-location">Noida</span>
+                          
+                              <span class="accordion-category pull-right">Web Development</span>
+                          
+                          </span> 
+                 </div>
+                </a>
+                 
+            </div>
+            <div id="collapseFifteen" class="collapse" data-parent="#accordion">
+                <div class="card-body clearfix">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
+                 <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                    <a href="abc.html">
+                            Learn More                 
+                        </a> 
+                  </button>
+
+                </span>   
+                 
+                </div>
+            </div>
+        </div>
+  
+    
+    </div>
+    
+    
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

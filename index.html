@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+<body id="homeMain">
+    <div class="home">
+        <h1>Companies.Earth
+            <i id="globe" class="fa fa-globe" aria-hidden="true"></i>
+        </h1>
+        <div class="home-search">
+            <span id="location">
+                <select name="selectLocation" id="loc" >
+                <option value="null">Select Location</option>
+                <option value="Gurugram">Gurugram</option>
+                <option value="Noida">Noida</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+        </span>
+            <span id="categories">
+                    <select name="Category" id="cat" >
+                        <option value="null">Category</option>
+                        <option value="AI">AI</option>
+                        <option value="Cyber">Cyber Security</option>
+                        <option value="Web">Web Development</option>
+                    </select>
+            </span>
+            <span class="search-bar home-search-bar">
+            <form action="" autocomplete="on">
+                <input id="search" name="search" type="text" placeholder="Search by name...">
+                <button>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                
+            </span>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

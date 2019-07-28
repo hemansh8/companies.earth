@@ -57,7 +57,7 @@
         class="bg-dark sticky-top align-items-center navbar navbar-expand-md  navbar-dark text-light"
       >
         <img src="./images/logo.png" alt="" class="h-75 m-2 rounded d-inline" />
-        <h2 class="h4 d-inline m-2 ">Google</h2>
+        <h2 class=" d-inline m-2 ">Google</h2>
 
         <button
           class="navbar-toggler "
@@ -70,32 +70,35 @@
         <div class=" bg-dark collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto p-3 text-white navbar-light ">
             <li class="nav-item ">
-              <a class="nav-link" href="./index.html">Home</a>
+              <a class="nav-link h4"  href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#overview">Overview</a>
+              <a class="nav-link h4" onclick=' backgroundHighlight(this.getAttribute("href"));' href="#overview">Overview</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#products">Products</a>
+                <a class="nav-link h4" onclick=' backgroundHighlight(this.getAttribute("href"));' href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link h4" onclick=' backgroundHighlight(this.getAttribute("href"));' href="#stock">Stock</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="#review">Review</a>
+              <a class="nav-link h4" onclick=' backgroundHighlight(this.getAttribute("href"));' href="#reviews">Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#careers">Careers</a>
+              <a class="nav-link h4" onclick=' backgroundHighlight(this.getAttribute("href"));' href="#careers">Careers</a>
             </li>
           </ul>
         </div>
       </nav>
-      <section class="container">
-        <div class="card border-0 " id="overview">
+      <section class=" mx-4 "data-spy="scroll" data-target=".navbar">
+        <div class="pt-100 card border-0" id="overview">
           <div class="card-head border-bottom">
-            <h3 class="h6">
+            <h3 class="h4">
               Overview
             </h3>
           </div>
           <div class="card-body bg-">
-            <div class="summary">
+            <div class="summary text-justify">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
               similique fugiat dicta exercitationem atque magnam nemo temporibus
               aperiam ipsam ut molestiae, recusandae consequuntur eum beatae
@@ -111,7 +114,7 @@
                   <td>Category</td>
                   <td>:</td>
                   <td>
-                    Artificial Intelligence, Machine Learning, Big-Data
+                    Artificial Intelligence, Machine Learning, Big-Data, Web Development, Cyber Security
                   </td>
                 </tr>
                 <tr class="greenRow">
@@ -123,6 +126,9 @@
                   <td>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Corporis, error.
+                    <span class="h7 external ">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </span>
                   </td>
                 </tr>
                 <tr>
@@ -143,7 +149,12 @@
                     Website
                   </td>
                   <td>:</td>
-                  <td><a href="#" target="_blank"></a>Ipsum.com</td>
+                  <td><a  href="#" target="_blank"></a>
+                    Ipsum.com 
+                    <span class="h7 external" onmouseover="">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </span>
+                  </td>
                 </tr>
                 <tr class="redRow">
                   <td>
@@ -153,6 +164,9 @@
                   <td>:</td>
                   <td>
                     Lorem@ipsum.com
+                    <span class="h7 external">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </span>
                   </td>
                 </tr>
                 <tr>
@@ -176,10 +190,10 @@
               </table>
             </div>
           </div>
-        </div>
-        <div class="card border-0 " id="products">
+        </div> 
+        <div class="pt-100 card border-0" id="products">
           <div class="card-head border-bottom">
-            <h3 class="h6">
+            <h3 class="h4">
               Products
             </h3>
           </div>
@@ -306,10 +320,23 @@
             
               
               </div>
-          </div>
-          <div class="card border-0" id="reviews">
+        </div>
+        <div class="pt-100 card border-0 container" id="stock">
+            <div class="card-head border-bottom">
+              <h3 class="h4">
+                Stock
+              </h3>
+            </div>
+            <div class="scrollbar" id="style-1">
+                <img src="./images/stock.jpg" alt="" >
+              </div>
+            
+  
+          
+          </div> 
+        <div class="pt-100 card border-0" id="reviews">
               <div class="card-head border-bottom">
-                  <h3 class="h6">
+                  <h3 class="h4">
                     Reviews
                   </h3>
                 </div>
@@ -318,13 +345,13 @@
                        
                         <div class="star-rating">
                             <h5 class="h4 text-center text-black">
-                                <span class="rating-color">3.7</span>/5 <sub>(785 reviews)</sub>
+                                <span class="rating-color h3">3.7</span>/5 <sub>(785 reviews)</sub>
                             </h5>
                             <span class="star-bars  table table-borderless container ">
                                 <table class="border-top m-auto">
                                     <tr>
                                         <td  >
-                                            <div id="five-star" class="mt-2" style="min-width: 70px">
+                                            <div id="five-star" class="" style="min-width: 70px">
                                                     <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                     <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                     <i class="rating-color fa fa-star" aria-hidden="true"></i>
@@ -333,7 +360,7 @@
                                             </div>
                                         </td>
                                         <td >
-                                            <div class="rating-color progress mt-3">
+                                            <div class="rating-color progress">
                                                 <div class=" progress-bar five" role="progressbar" aria-valuenow="70"
                                                          aria-valuemin="0" aria-valuemax="100" >
                                                         <span>
@@ -344,14 +371,14 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                            <td  ><div id="four-star" class="mt-2">
+                                            <td  ><div id="four-star" class="">
                                                     <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                     <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                     <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                     <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                </div></td>
                                                <td >
-                                                    <div class="rating-color progress mt-3">
+                                                    <div class="rating-color progress">
                                                             <div class=" four progress-bar " role="progressbar" aria-valuenow="70"
                                                             aria-valuemin="0" aria-valuemax="100" >
                                                             <span>25%</span>
@@ -360,13 +387,13 @@
                                                </td>
                                     </tr>
                                     <tr>
-                                                <td  ><div id="three-star" class="mt-2">
+                                                <td  ><div id="three-star" class="">
                                                         <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                         <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                         <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                     </div></td>
                                                    <td >
-                                                        <div class="rating-color progress mt-3">
+                                                        <div class="rating-color progress ">
                                                                 <div class="three progress-bar " role="progressbar" aria-valuenow="70"
                                                                 aria-valuemin="0" aria-valuemax="100" >
                                                                 <span>10%</span>
@@ -375,12 +402,12 @@
                                                    </td>
                                     </tr>
                                     <tr>
-                                                    <td  ><div id="two-star" class="mt-2">
+                                                    <td  ><div id="two-star" class="">
                                                             <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                             <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                         </div></td>
                                                        <td >
-                                                            <div class="rating-color progress mt-3">
+                                                            <div class="rating-color progress ">
                                                                     <div class=" progress-bar two " role="progressbar" aria-valuenow="70"
                                                                     aria-valuemin="0" aria-valuemax="100">
                                                                     <span>15%</span>
@@ -389,11 +416,11 @@
                                                        </td>
                                     </tr>
                                     <tr>
-                                                        <td ><div id="one-star" class="mt-2">
+                                                        <td ><div id="one-star" class="">
                                                                 <i class="rating-color fa fa-star" aria-hidden="true"></i>
                                                             </div></td>
                                                            <td >
-                                                                <div class="rating-color progress mt-3">
+                                                                <div class="rating-color progress ">
                                                                         <div class=" progress-bar one" role="progressbar" aria-valuenow="70"
                                                                         aria-valuemin="0" aria-valuemax="100" >
                                                                         <span>10%</span>
@@ -402,12 +429,14 @@
                                                            </td>
                                     </tr>
                                 </table>
-                                <div class="review-slide border-top p-3 mt-3">
-                                    <section id="home-reviews">
-                                <div class="col-sm-10 ml-auto mr-auto text-center">
-                                    <h4 class="h6">Read what some of our customers are saying</h2>
-                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner bg-white mt-5">
+                                <div class="ml-auto review-slide border-top p-3 mt-3 container">
+                                  <div id="home-reviews">
+                                    <div class=" text-center">
+                                    
+                                      <h4 class="h6">Read what some of our customers are saying</h4>
+                                    
+                                      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner mt-5">
                                             <div class="carousel-item active">
                                                 <p class="review-body"><i class="fa fa-quote-left rating-color" aria-hidden="true"></i>		We appreciate the way in which the restoration of our drive thru sign was completed. Like the way YESCO took care of everything from removal to rewiring.<i class="fa fa-quote-right rating-color" aria-hidden="true"></i></p>
                                                 <p class="review-name">Valued Customer at McDonalds/Mac Management Inc.</p>
@@ -473,9 +502,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    
+                                      </div>
+                                
                                     </div>
-                                </div>
-                            </section>
+                                  </div>
                                 </div>
 <!--                               
                            <div class="d-md-none d-block">
@@ -538,851 +569,614 @@
                            </div>
                             </span>
                         </div>
-                </div>
-                <div class="card border-0" id="careers">
-                  <div class="card-head border-bottom">
-                      <h3 class="h6">
-                        Careers
-                      </h3>
-                    </div>
-                    <div class="card-body d-flex row">   
-                        <div id="accordion" class="container">
+        </div>
+        <div class="pt-100 card border-0" id="careers">
+          <div class="card-head d-flex justify-content-between border-bottom">
+            <h3 class="h4">
+              Careers
+            </h3>
+            <form
+        class="d-inline-block  pl-3 "
+        action="/search"
+        accept-charset="UTF-8"
+        method="post"
+      >
+        <label class=" d-inline" for="q">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </label>
+        <input
+          type="text"
+          name="q"
+          id="q"
+          value=""
+          placeholder="SEARCH"
+          class="d-inline  border-0"
+          autocomplete="off"
+        />
+      </form>
+          </div>
+          <div class="card-body  ">   
+            <div class="joblists container">
+
+                <div id="accordion1" class=" w-30" >
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="card-link" onclick="shiftWidth(this.parentElement.parentElement.parentElement);" data-toggle="collapse" href="#collapseBO">
+                          <div class="card-header-div">
+                            Business Operations
+                          </div>
+                        </a>
+                      </div>
+                      <div id="collapseBO" class="collapse" data-parent="#accordion1">
+                        <div class="card-body" >
+                        
+                          <div>
+                              <h5 class="text-dark h6">
+                                  Team Leader Travel & Expense
+                              </h5>
+                              <div class="rating-color ml-2">
+                                <h6 class="h7">
+                                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                  Ind - Gurgaon, HR                      
+                                </h6>
+                                <h6 class="h7">
+                                  <i class="fa fa-money" aria-hidden="true"></i>
+                                  $130k – $170k                
+                                </h6>
+                              </div>
+                              <span class="comp-btn-area">
+                                  <button class="open-comp-btn  ">
+                                    <a href="abc.html" target="_blank">
+                                      Apply Now
+                                    </a> 
+                                  </button>
+                                </span>  
+                          </div>
+                          <div class="border-top pt-2 mt-2">
+                              <h5 class="text-dark h6">
+                                  Team Leader Travel & Expense
+                              </h5>
+                              <div class="rating-color ml-2">
+                                <h6 class="h7">
+                                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                  Ind - Gurgaon, HR                      
+                                </h6>
+                                <h6 class="h7">
+                                  <i class="fa fa-money" aria-hidden="true"></i>
+                                  $130k – $170k                
+                                </h6>
+                              </div>
+                              <span class="comp-btn-area">
+                                <button class="open-comp-btn  ">
+                                  <a href="abc.html" target="_blank">
+                                      Apply Now                 
+                                  </a> 
+                                </button>
+                              </span>  
+                          </div>
+                          <div class="border-top pt-2 mt-2">
+                              <h5 class="text-dark h6">
+                                  Team Leader Travel & Expense
+                              </h5>
+                              <div class="rating-color ml-2">
+                                <h6 class="h7">
+                                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                  Ind - Gurgaon, HR                      
+                                </h6>
+                                <h6 class="h7">
+                                  <i class="fa fa-money" aria-hidden="true"></i>
+                                  $130k – $170k                
+                                </h6>
+                              </div>
+                              <span class="comp-btn-area">
+                                <button class="open-comp-btn  ">
+                                  <a href="abc.html" target="_blank">
+                                      Apply Now              
+                                  </a> 
+                                </button>
+                              </span>  
+                          </div>  
+                         </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="accordion2" class="w-30">
+                        <div class="card">
+                          <div class="card-header">
+                            <a class="card-link" onclick="shiftWidth(this.parentElement.parentElement.parentElement);" data-toggle="collapse" href="#collapseCS">
+                              <div class="card-header-div">
+                                Client Services
+                              </div>
+                            </a>
+                          </div>
+                          <div id="collapseCS" class="collapse" data-parent="#accordion2">
+                            <div class="card-body" >
+                            
+                              <div>
+                                  <h5 class="text-dark h6">
+                                      Team Leader Travel & Expense
+                                  </h5>
+                                  <div class="rating-color ml-2">
+                                    <h6 class="h7">
+                                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                      Ind - Gurgaon, HR                      
+                                    </h6>
+                                    <h6 class="h7">
+                                      <i class="fa fa-money" aria-hidden="true"></i>
+                                      $130k – $170k                
+                                    </h6>
+                                  </div>
+                                  <span class="comp-btn-area">
+                                      <button class="open-comp-btn  ">
+                                        <a href="abc.html" target="_blank">
+                                            Apply Now                 
+                                        </a> 
+                                      </button>
+                                    </span>  
+                              </div>
+                              <div class="border-top pt-2 mt-2">
+                                  <h5 class="text-dark h6">
+                                      Team Leader Travel & Expense
+                                  </h5>
+                                  <div class="rating-color ml-2">
+                                    <h6 class="h7">
+                                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                      Ind - Gurgaon, HR                      
+                                    </h6>
+                                    <h6 class="h7">
+                                      <i class="fa fa-money" aria-hidden="true"></i>
+                                      $130k – $170k                
+                                    </h6>
+                                  </div>
+                                  <span class="comp-btn-area">
+                                    <button class="open-comp-btn  ">
+                                      <a href="abc.html" target="_blank">
+                                          Apply Now
+                                      </a> 
+                                    </button>
+                                  </span>  
+                              </div>
+                              <!-- <div class="border-top pt-2 mt-2">
+                                  <h5 class="text-dark h6">
+                                      Team Leader Travel & Expense
+                                  </h5>
+                                  <div class="rating-color ml-2">
+                                    <h6 class="h7">
+                                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                      Ind - Gurgaon, HR                      
+                                    </h6>
+                                    <h6 class="h7">
+                                      <i class="fa fa-money" aria-hidden="true"></i>
+                                      $130k – $170k                
+                                    </h6>
+                                  </div>
+                                  <span class="comp-btn-area">
+                                    <button class="open-comp-btn  ">
+                                      <a href="abc.html" target="_blank">
+                                        Learn More                 
+                                      </a> 
+                                    </button>
+                                  </span>  
+                              </div>   -->
+                             </div>
+                            </div>
+                          </div>
+                  </div>
+                  <div id="accordion3" class="w-30">
                             <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                            <div class="card-header-div">
-                                            Product 1
-                                            <span class="accord-company-tag ">
-                                                  <span class="accordion-category pull-right">Artificial Intelligence</span>
-                                              
-                                              </span> 
-                                     </div>
-                                    </a>
-                    
-                                </div>
-                                <div id="collapseOne" class="collapse" data-parent="#accordion">
-                                    <div class="card-body" >
-                                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse ipsum accusamus. Veniam facere earum fuga illo, impedit obcaecati nobis porro nihil vel natus eum corporis in harum laborum illum dolor nemo recusandae esse ullam eligendi iure. Voluptas, explicabo non.</p>
-                                        
-                                       <span class="comp-btn-area">
+                              <div class="card-header">
+                                <a class="card-link" onclick="shiftWidth(this.parentElement.parentElement.parentElement);" data-toggle="collapse" href="#collapseHR">
+                                  <div class="card-header-div">
+                                    Human Resources
+                                  </div>
+                                </a>
+                              </div>
+                              <div id="collapseHR" class="collapse" data-parent="#accordion3">
+                                <div class="card-body" >
+                                
+                                  <div>
+                                      <h5 class="text-dark h6">
+                                          Team Leader Travel & Expense
+                                      </h5>
+                                      <div class="rating-color ml-2">
+                                        <h6 class="h7">
+                                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                          Ind - Gurgaon, HR                      
+                                        </h6>
+                                        <h6 class="h7">
+                                          <i class="fa fa-money" aria-hidden="true"></i>
+                                          $130k – $170k                
+                                        </h6>
+                                      </div>
+                                      <span class="comp-btn-area">
                                           <button class="open-comp-btn  ">
                                             <a href="abc.html" target="_blank">
-                                                Learn More                 
+                                                Apply Now                 
                                             </a> 
-                                      </button>
-                    
-                                    </span>   
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                     <div class="card-header-div">
-                                        Product 2
-                                            <span class="accord-company-tag ">
-                                                  <span class="accordion-category pull-right">Cyber Security</span>
-                                              
-                                              </span> 
-                                     </div>
-                                    </a>
-                                    
-                                </div>
-                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                    <div class="card-body ">
-                                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur est molestiae, libero suscipit facilis minus! Illum quae est praesentium veniam voluptatum, eligendi quas voluptatibus culpa, porro rem error exercitationem reiciendis vel iusto dolore beatae accusamus eius neque minus eum modi. Distinctio dolorum ipsa minima praesentium perspiciatis nemo dignissimos? Id, in?</p>
-                                        
-                                       <span class="comp-btn-area">
-                                          <button class="open-comp-btn ">
-                                        
-                                            <a href="abc.html">
-                                                Learn More                 
-                                            </a> 
-                                      </button>
-                    
-                                    </span>   
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                     <div class="card-header-div">
-                                        Product 3
-                                            <span class="accord-company-tag ">
-                                                  
-                                                  <span class="accordion-category pull-right">Web Development</span>
-                                              
-                                              </span> 
-                                     </div>
-                                    </a>
-                                     
-                                </div>
-                                <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                    <div class="card-body clearfix">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                     <span class="comp-btn-area">
-                                          <button class="open-comp-btn  ">
-                                        <a href="abc.html">
-                                                Learn More                 
-                                            </a> 
-                                      </button>
-                    
-                                    </span>   
-                                     
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                     <div class="card-header-div">
-                                        Product 4
-                                            <span class="accord-company-tag ">
-                                                  
-                                                  <span class="accordion-category pull-right">Web Development</span>
-                                              
-                                              </span> 
-                                     </div>
-                                    </a>
-                                     
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                    <div class="card-body clearfix">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                     <span class="comp-btn-area">
-                                          <button class="open-comp-btn  ">
-                                        <a href="abc.html">
-                                                Learn More                 
-                                            </a> 
-                                      </button>
-                    
-                                    </span>   
-                                     
-                                    </div>
-                                </div>
-                            </div>
-                            
-                                       
-                            </div>
-                            <div id="accordion2" class="container">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                                <div class="card-header-div">
-                                                Product 1
-                                                <span class="accord-company-tag ">
-                                                      <span class="accordion-category pull-right">Artificial Intelligence</span>
-                                                  
-                                                  </span> 
-                                         </div>
-                                        </a>
-                        
-                                    </div>
-                                    <div id="collapseOne" class="collapse" data-parent="#accordion2">
-                                        <div class="card-body" >
-                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse ipsum accusamus. Veniam facere earum fuga illo, impedit obcaecati nobis porro nihil vel natus eum corporis in harum laborum illum dolor nemo recusandae esse ullam eligendi iure. Voluptas, explicabo non.</p>
-                                            
-                                           <span class="comp-btn-area">
-                                              <button class="open-comp-btn  ">
-                                                <a href="abc.html" target="_blank">
-                                                    Learn More                 
-                                                </a> 
                                           </button>
-                        
-                                        </span>   
-                                        </div>
-                                    </div>
+                                        </span>  
+                                  </div>
+                                  <div class="border-top pt-2 mt-2">
+                                      <h5 class="text-dark h6">
+                                          Team Leader Travel & Expense
+                                      </h5>
+                                      <div class="rating-color ml-2">
+                                        <h6 class="h7">
+                                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                          Ind - Gurgaon, HR                      
+                                        </h6>
+                                        <h6 class="h7">
+                                          <i class="fa fa-money" aria-hidden="true"></i>
+                                          $130k – $170k                
+                                        </h6>
+                                      </div>
+                                      <span class="comp-btn-area">
+                                        <button class="open-comp-btn  ">
+                                          <a href="abc.html" target="_blank">
+                                              Apply Now                
+                                          </a> 
+                                        </button>
+                                      </span>  
+                                  </div>
+                                  <div class="border-top pt-2 mt-2">
+                                      <h5 class="text-dark h6">
+                                          Team Leader Travel & Expense
+                                      </h5>
+                                      <div class="rating-color ml-2">
+                                        <h6 class="h7">
+                                          <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                          Ind - Gurgaon, HR                      
+                                        </h6>
+                                        <h6 class="h7">
+                                          <i class="fa fa-money" aria-hidden="true"></i>
+                                          $130k – $170k                
+                                        </h6>
+                                      </div>
+                                      <span class="comp-btn-area">
+                                        <button class="open-comp-btn  ">
+                                          <a href="abc.html" target="_blank">
+                                              Apply Now              
+                                          </a> 
+                                        </button>
+                                      </span>  
+                                  </div>  
+                                 </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                         <div class="card-header-div">
-                                            Product 2
-                                                <span class="accord-company-tag ">
-                                                      <span class="accordion-category pull-right">Cyber Security</span>
-                                                  
-                                                  </span> 
-                                         </div>
-                                        </a>
-                                        
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion2">
-                                        <div class="card-body ">
-                                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur est molestiae, libero suscipit facilis minus! Illum quae est praesentium veniam voluptatum, eligendi quas voluptatibus culpa, porro rem error exercitationem reiciendis vel iusto dolore beatae accusamus eius neque minus eum modi. Distinctio dolorum ipsa minima praesentium perspiciatis nemo dignissimos? Id, in?</p>
-                                            
-                                           <span class="comp-btn-area">
-                                              <button class="open-comp-btn ">
-                                            
-                                                <a href="abc.html">
-                                                    Learn More                 
-                                                </a> 
-                                          </button>
-                        
-                                        </span>   
-                                        </div>
-                                    </div>
+                              </div>
+                  </div>
+                  <div id="accordion4" class="w-30 ">
+                      <div class="card">
+                        <div class="card-header">
+                          <a class="card-link" onclick="shiftWidth(this.parentElement.parentElement.parentElement);" data-toggle="collapse" href="#collapseLG">
+                            <div class="card-header-div">
+                              Legal
+                            </div>
+                          </a>
+                        </div>
+                        <div id="collapseLG" class="collapse" data-parent="#accordion4">
+                          <div class="card-body" >
+                          
+                            <div>
+                                <h5 class="text-dark h6">
+                                    Team Leader Travel & Expense
+                                </h5>
+                                <div class="rating-color ml-2">
+                                  <h6 class="h7">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    Ind - Gurgaon, HR                      
+                                  </h6>
+                                  <h6 class="h7">
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+                                    $130k – $170k                
+                                  </h6>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                         <div class="card-header-div">
-                                            Product 3
-                                                <span class="accord-company-tag ">
-                                                      
-                                                      <span class="accordion-category pull-right">Web Development</span>
-                                                  
-                                                  </span> 
-                                         </div>
-                                        </a>
-                                         
-                                    </div>
-                                    <div id="collapseThree" class="collapse" data-parent="#accordion2">
-                                        <div class="card-body clearfix">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                         <span class="comp-btn-area">
-                                              <button class="open-comp-btn  ">
-                                            <a href="abc.html">
-                                                    Learn More                 
-                                                </a> 
-                                          </button>
-                        
-                                        </span>   
-                                         
-                                        </div>
-                                    </div>
+                                <span class="comp-btn-area">
+                                    <button class="open-comp-btn  ">
+                                      <a href="abc.html" target="_blank">
+                                          Apply Now                 
+                                      </a> 
+                                    </button>
+                                  </span>  
+                            </div>
+                            <div class="border-top pt-2 mt-2">
+                                <h5 class="text-dark h6">
+                                    Team Leader Travel & Expense
+                                </h5>
+                                <div class="rating-color ml-2">
+                                  <h6 class="h7">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    Ind - Gurgaon, HR                      
+                                  </h6>
+                                  <h6 class="h7">
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+                                    $130k – $170k                
+                                  </h6>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                         <div class="card-header-div">
-                                            Product 4
-                                                <span class="accord-company-tag ">
-                                                      
-                                                      <span class="accordion-category pull-right">Web Development</span>
-                                                  
-                                                  </span> 
-                                         </div>
-                                        </a>
-                                         
-                                    </div>
-                                    <div id="collapseFour" class="collapse" data-parent="#accordion2">
-                                        <div class="card-body clearfix">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                         <span class="comp-btn-area">
-                                              <button class="open-comp-btn  ">
-                                            <a href="abc.html">
-                                                    Learn More                 
-                                                </a> 
-                                          </button>
-                        
-                                        </span>   
-                                         
-                                        </div>
-                                    </div>
+                                <span class="comp-btn-area">
+                                  <button class="open-comp-btn  ">
+                                    <a href="abc.html" target="_blank">
+                                        Apply Now                
+                                    </a> 
+                                  </button>
+                                </span>  
+                            </div>
+                            <div class="border-top pt-2 mt-2">
+                                <h5 class="text-dark h6">
+                                    Team Leader Travel & Expense
+                                </h5>
+                                <div class="rating-color ml-2">
+                                  <h6 class="h7">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    Ind - Gurgaon, HR                      
+                                  </h6>
+                                  <h6 class="h7">
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+                                    $130k – $170k                
+                                  </h6>
                                 </div>
-                                
-                                           
-                                </div>
-                                <div id="accordion3" class="container">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                                    <div class="card-header-div">
-                                                    Product 1
-                                                    <span class="accord-company-tag ">
-                                                          <span class="accordion-category pull-right">Artificial Intelligence</span>
-                                                      
-                                                      </span> 
-                                             </div>
-                                            </a>
-                            
-                                        </div>
-                                        <div id="collapseOne" class="collapse" data-parent="#accordion3">
-                                            <div class="card-body" >
-                                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse ipsum accusamus. Veniam facere earum fuga illo, impedit obcaecati nobis porro nihil vel natus eum corporis in harum laborum illum dolor nemo recusandae esse ullam eligendi iure. Voluptas, explicabo non.</p>
-                                                
-                                               <span class="comp-btn-area">
-                                                  <button class="open-comp-btn  ">
-                                                    <a href="abc.html" target="_blank">
-                                                        Learn More                 
-                                                    </a> 
-                                              </button>
-                            
-                                            </span>   
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                             <div class="card-header-div">
-                                                Product 2
-                                                    <span class="accord-company-tag ">
-                                                          <span class="accordion-category pull-right">Cyber Security</span>
-                                                      
-                                                      </span> 
-                                             </div>
-                                            </a>
-                                            
-                                        </div>
-                                        <div id="collapseTwo" class="collapse" data-parent="#accordion3">
-                                            <div class="card-body ">
-                                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur est molestiae, libero suscipit facilis minus! Illum quae est praesentium veniam voluptatum, eligendi quas voluptatibus culpa, porro rem error exercitationem reiciendis vel iusto dolore beatae accusamus eius neque minus eum modi. Distinctio dolorum ipsa minima praesentium perspiciatis nemo dignissimos? Id, in?</p>
-                                                
-                                               <span class="comp-btn-area">
-                                                  <button class="open-comp-btn ">
-                                                
-                                                    <a href="abc.html">
-                                                        Learn More                 
-                                                    </a> 
-                                              </button>
-                            
-                                            </span>   
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                             <div class="card-header-div">
-                                                Product 3
-                                                    <span class="accord-company-tag ">
-                                                          
-                                                          <span class="accordion-category pull-right">Web Development</span>
-                                                      
-                                                      </span> 
-                                             </div>
-                                            </a>
-                                             
-                                        </div>
-                                        <div id="collapseThree" class="collapse" data-parent="#accordion3">
-                                            <div class="card-body clearfix">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                             <span class="comp-btn-area">
-                                                  <button class="open-comp-btn  ">
-                                                <a href="abc.html">
-                                                        Learn More                 
-                                                    </a> 
-                                              </button>
-                            
-                                            </span>   
-                                             
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                             <div class="card-header-div">
-                                                Product 4
-                                                    <span class="accord-company-tag ">
-                                                          
-                                                          <span class="accordion-category pull-right">Web Development</span>
-                                                      
-                                                      </span> 
-                                             </div>
-                                            </a>
-                                             
-                                        </div>
-                                        <div id="collapseFour" class="collapse" data-parent="#accordion3">
-                                            <div class="card-body clearfix">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                             <span class="comp-btn-area">
-                                                  <button class="open-comp-btn  ">
-                                                <a href="abc.html">
-                                                        Learn More                 
-                                                    </a> 
-                                              </button>
-                            
-                                            </span>   
-                                             
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                               
-                                    </div>
-                                    <div id="accordion4" class="container">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                                        <div class="card-header-div">
-                                                        Product 1
-                                                        <span class="accord-company-tag ">
-                                                              <span class="accordion-category pull-right">Artificial Intelligence</span>
-                                                          
-                                                          </span> 
-                                                 </div>
-                                                </a>
-                                
-                                            </div>
-                                            <div id="collapseOne" class="collapse" data-parent="#accordion4">
-                                                <div class="card-body" >
-                                                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse ipsum accusamus. Veniam facere earum fuga illo, impedit obcaecati nobis porro nihil vel natus eum corporis in harum laborum illum dolor nemo recusandae esse ullam eligendi iure. Voluptas, explicabo non.</p>
-                                                    
-                                                   <span class="comp-btn-area">
-                                                      <button class="open-comp-btn  ">
-                                                        <a href="abc.html" target="_blank">
-                                                            Learn More                 
-                                                        </a> 
-                                                  </button>
-                                
-                                                </span>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                                 <div class="card-header-div">
-                                                    Product 2
-                                                        <span class="accord-company-tag ">
-                                                              <span class="accordion-category pull-right">Cyber Security</span>
-                                                          
-                                                          </span> 
-                                                 </div>
-                                                </a>
-                                                
-                                            </div>
-                                            <div id="collapseTwo" class="collapse" data-parent="#accordion4">
-                                                <div class="card-body ">
-                                                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur est molestiae, libero suscipit facilis minus! Illum quae est praesentium veniam voluptatum, eligendi quas voluptatibus culpa, porro rem error exercitationem reiciendis vel iusto dolore beatae accusamus eius neque minus eum modi. Distinctio dolorum ipsa minima praesentium perspiciatis nemo dignissimos? Id, in?</p>
-                                                    
-                                                   <span class="comp-btn-area">
-                                                      <button class="open-comp-btn ">
-                                                    
-                                                        <a href="abc.html">
-                                                            Learn More                 
-                                                        </a> 
-                                                  </button>
-                                
-                                                </span>   
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                                 <div class="card-header-div">
-                                                    Product 3
-                                                        <span class="accord-company-tag ">
-                                                              
-                                                              <span class="accordion-category pull-right">Web Development</span>
-                                                          
-                                                          </span> 
-                                                 </div>
-                                                </a>
-                                                 
-                                            </div>
-                                            <div id="collapseThree" class="collapse" data-parent="#accordion4">
-                                                <div class="card-body clearfix">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                                 <span class="comp-btn-area">
-                                                      <button class="open-comp-btn  ">
-                                                    <a href="abc.html">
-                                                            Learn More                 
-                                                        </a> 
-                                                  </button>
-                                
-                                                </span>   
-                                                 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                                 <div class="card-header-div">
-                                                    Product 4
-                                                        <span class="accord-company-tag ">
-                                                              
-                                                              <span class="accordion-category pull-right">Web Development</span>
-                                                          
-                                                          </span> 
-                                                 </div>
-                                                </a>
-                                                 
-                                            </div>
-                                            <div id="collapseFour" class="collapse" data-parent="#accordion4">
-                                                <div class="card-body clearfix">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                                 <span class="comp-btn-area">
-                                                      <button class="open-comp-btn  ">
-                                                    <a href="abc.html">
-                                                            Learn More                 
-                                                        </a> 
-                                                  </button>
-                                
-                                                </span>   
-                                                 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                                   
-                                        </div>
-                                        <div id="accordion5" class="container">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                                            <div class="card-header-div">
-                                                            Product 1
-                                                            <span class="accord-company-tag ">
-                                                                  <span class="accordion-category pull-right">Artificial Intelligence</span>
-                                                              
-                                                              </span> 
-                                                     </div>
-                                                    </a>
-                                    
-                                                </div>
-                                                <div id="collapseOne" class="collapse" data-parent="#accordion5">
-                                                    <div class="card-body" >
-                                                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse ipsum accusamus. Veniam facere earum fuga illo, impedit obcaecati nobis porro nihil vel natus eum corporis in harum laborum illum dolor nemo recusandae esse ullam eligendi iure. Voluptas, explicabo non.</p>
-                                                        
-                                                       <span class="comp-btn-area">
-                                                          <button class="open-comp-btn  ">
-                                                            <a href="abc.html" target="_blank">
-                                                                Learn More                 
-                                                            </a> 
-                                                      </button>
-                                    
-                                                    </span>   
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                                     <div class="card-header-div">
-                                                        Product 2
-                                                            <span class="accord-company-tag ">
-                                                                  <span class="accordion-category pull-right">Cyber Security</span>
-                                                              
-                                                              </span> 
-                                                     </div>
-                                                    </a>
-                                                    
-                                                </div>
-                                                <div id="collapseTwo" class="collapse" data-parent="#accordion5">
-                                                    <div class="card-body ">
-                                                       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur est molestiae, libero suscipit facilis minus! Illum quae est praesentium veniam voluptatum, eligendi quas voluptatibus culpa, porro rem error exercitationem reiciendis vel iusto dolore beatae accusamus eius neque minus eum modi. Distinctio dolorum ipsa minima praesentium perspiciatis nemo dignissimos? Id, in?</p>
-                                                        
-                                                       <span class="comp-btn-area">
-                                                          <button class="open-comp-btn ">
-                                                        
-                                                            <a href="abc.html">
-                                                                Learn More                 
-                                                            </a> 
-                                                      </button>
-                                    
-                                                    </span>   
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                                     <div class="card-header-div">
-                                                        Product 3
-                                                            <span class="accord-company-tag ">
-                                                                  
-                                                                  <span class="accordion-category pull-right">Web Development</span>
-                                                              
-                                                              </span> 
-                                                     </div>
-                                                    </a>
-                                                     
-                                                </div>
-                                                <div id="collapseThree" class="collapse" data-parent="#accordion5">
-                                                    <div class="card-body clearfix">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                                     <span class="comp-btn-area">
-                                                          <button class="open-comp-btn  ">
-                                                        <a href="abc.html">
-                                                                Learn More                 
-                                                            </a> 
-                                                      </button>
-                                    
-                                                    </span>   
-                                                     
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                                     <div class="card-header-div">
-                                                        Product 4
-                                                            <span class="accord-company-tag ">
-                                                                  
-                                                                  <span class="accordion-category pull-right">Web Development</span>
-                                                              
-                                                              </span> 
-                                                     </div>
-                                                    </a>
-                                                     
-                                                </div>
-                                                <div id="collapseFour" class="collapse" data-parent="#accordion5">
-                                                    <div class="card-body clearfix">
-                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                                     <span class="comp-btn-area">
-                                                          <button class="open-comp-btn  ">
-                                                        <a href="abc.html">
-                                                                Learn More                 
-                                                            </a> 
-                                                      </button>
-                                    
-                                                    </span>   
-                                                     
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                                       
-                                            </div>
-                                            <div id="accordion6" class="container">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                                                <div class="card-header-div">
-                                                                Product 1
-                                                                <span class="accord-company-tag ">
-                                                                      <span class="accordion-category pull-right">Artificial Intelligence</span>
-                                                                  
-                                                                  </span> 
-                                                         </div>
-                                                        </a>
-                                        
-                                                    </div>
-                                                    <div id="collapseOne" class="collapse" data-parent="#accordion6">
-                                                        <div class="card-body" >
-                                                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse ipsum accusamus. Veniam facere earum fuga illo, impedit obcaecati nobis porro nihil vel natus eum corporis in harum laborum illum dolor nemo recusandae esse ullam eligendi iure. Voluptas, explicabo non.</p>
-                                                            
-                                                           <span class="comp-btn-area">
-                                                              <button class="open-comp-btn  ">
-                                                                <a href="abc.html" target="_blank">
-                                                                    Learn More                 
-                                                                </a> 
-                                                          </button>
-                                        
-                                                        </span>   
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                                         <div class="card-header-div">
-                                                            Product 2
-                                                                <span class="accord-company-tag ">
-                                                                      <span class="accordion-category pull-right">Cyber Security</span>
-                                                                  
-                                                                  </span> 
-                                                         </div>
-                                                        </a>
-                                                        
-                                                    </div>
-                                                    <div id="collapseTwo" class="collapse" data-parent="#accordion6">
-                                                        <div class="card-body ">
-                                                           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur est molestiae, libero suscipit facilis minus! Illum quae est praesentium veniam voluptatum, eligendi quas voluptatibus culpa, porro rem error exercitationem reiciendis vel iusto dolore beatae accusamus eius neque minus eum modi. Distinctio dolorum ipsa minima praesentium perspiciatis nemo dignissimos? Id, in?</p>
-                                                            
-                                                           <span class="comp-btn-area">
-                                                              <button class="open-comp-btn ">
-                                                            
-                                                                <a href="abc.html">
-                                                                    Learn More                 
-                                                                </a> 
-                                                          </button>
-                                        
-                                                        </span>   
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                                         <div class="card-header-div">
-                                                            Product 3
-                                                                <span class="accord-company-tag ">
-                                                                      
-                                                                      <span class="accordion-category pull-right">Web Development</span>
-                                                                  
-                                                                  </span> 
-                                                         </div>
-                                                        </a>
-                                                         
-                                                    </div>
-                                                    <div id="collapseThree" class="collapse" data-parent="#accordion6">
-                                                        <div class="card-body clearfix">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                                         <span class="comp-btn-area">
-                                                              <button class="open-comp-btn  ">
-                                                            <a href="abc.html">
-                                                                    Learn More                 
-                                                                </a> 
-                                                          </button>
-                                        
-                                                        </span>   
-                                                         
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                                         <div class="card-header-div">
-                                                            Product 4
-                                                                <span class="accord-company-tag ">
-                                                                      
-                                                                      <span class="accordion-category pull-right">Web Development</span>
-                                                                  
-                                                                  </span> 
-                                                         </div>
-                                                        </a>
-                                                         
-                                                    </div>
-                                                    <div id="collapseFour" class="collapse" data-parent="#accordion6">
-                                                        <div class="card-body clearfix">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                                         <span class="comp-btn-area">
-                                                              <button class="open-comp-btn  ">
-                                                            <a href="abc.html">
-                                                                    Learn More                 
-                                                                </a> 
-                                                          </button>
-                                        
-                                                        </span>   
-                                                         
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                           
-                                                </div>
-                                                <div id="accordion7" class="container">
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                                                    <div class="card-header-div">
-                                                                    Product 1
-                                                                    <span class="accord-company-tag ">
-                                                                          <span class="accordion-category pull-right">Artificial Intelligence</span>
-                                                                      
-                                                                      </span> 
-                                                             </div>
-                                                            </a>
-                                            
-                                                        </div>
-                                                        <div id="collapseOne" class="collapse" data-parent="#accordion7">
-                                                            <div class="card-body" >
-                                                              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse ipsum accusamus. Veniam facere earum fuga illo, impedit obcaecati nobis porro nihil vel natus eum corporis in harum laborum illum dolor nemo recusandae esse ullam eligendi iure. Voluptas, explicabo non.</p>
-                                                                
-                                                               <span class="comp-btn-area">
-                                                                  <button class="open-comp-btn  ">
-                                                                    <a href="abc.html" target="_blank">
-                                                                        Learn More                 
-                                                                    </a> 
-                                                              </button>
-                                            
-                                                            </span>   
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                                             <div class="card-header-div">
-                                                                Product 2
-                                                                    <span class="accord-company-tag ">
-                                                                          <span class="accordion-category pull-right">Cyber Security</span>
-                                                                      
-                                                                      </span> 
-                                                             </div>
-                                                            </a>
-                                                            
-                                                        </div>
-                                                        <div id="collapseTwo" class="collapse" data-parent="#accordion7">
-                                                            <div class="card-body ">
-                                                               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur est molestiae, libero suscipit facilis minus! Illum quae est praesentium veniam voluptatum, eligendi quas voluptatibus culpa, porro rem error exercitationem reiciendis vel iusto dolore beatae accusamus eius neque minus eum modi. Distinctio dolorum ipsa minima praesentium perspiciatis nemo dignissimos? Id, in?</p>
-                                                                
-                                                               <span class="comp-btn-area">
-                                                                  <button class="open-comp-btn ">
-                                                                
-                                                                    <a href="abc.html">
-                                                                        Learn More                 
-                                                                    </a> 
-                                                              </button>
-                                            
-                                                            </span>   
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                                             <div class="card-header-div">
-                                                                Product 3
-                                                                    <span class="accord-company-tag ">
-                                                                          
-                                                                          <span class="accordion-category pull-right">Web Development</span>
-                                                                      
-                                                                      </span> 
-                                                             </div>
-                                                            </a>
-                                                             
-                                                        </div>
-                                                        <div id="collapseThree" class="collapse" data-parent="#accordion7">
-                                                            <div class="card-body clearfix">
-                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                                             <span class="comp-btn-area">
-                                                                  <button class="open-comp-btn  ">
-                                                                <a href="abc.html">
-                                                                        Learn More                 
-                                                                    </a> 
-                                                              </button>
-                                            
-                                                            </span>   
-                                                             
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                                                             <div class="card-header-div">
-                                                                Product 4
-                                                                    <span class="accord-company-tag ">
-                                                                          
-                                                                          <span class="accordion-category pull-right">Web Development</span>
-                                                                      
-                                                                      </span> 
-                                                             </div>
-                                                            </a>
-                                                             
-                                                        </div>
-                                                        <div id="collapseFour" class="collapse" data-parent="#accordion7">
-                                                            <div class="card-body clearfix">
-                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus aperiam soluta, ratione accusantium ut! Quidem facilis, iusto maiores quam explicabo eum repellendus impedit officia? Non velit officiis ut, similique consequatur ea nam, quas, nihil repellendus dolor assumenda possimus facere.</p>
-                                                             <span class="comp-btn-area">
-                                                                  <button class="open-comp-btn  ">
-                                                                <a href="abc.html">
-                                                                        Learn More                 
-                                                                    </a> 
-                                                              </button>
-                                            
-                                                            </span>   
-                                                             
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                               
-                                                    </div> 
+                                <span class="comp-btn-area">
+                                  <button class="open-comp-btn  ">
+                                    <a href="abc.html" target="_blank">
+                                        Apply Now              
+                                    </a> 
+                                  </button>
+                                </span>  
+                            </div>  
+                           </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div id="accordion5" class="w-30">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="card-link" onclick="shiftWidth(this.parentElement.parentElement.parentElement);" data-toggle="collapse" href="#collapseFN">
+                      <div class="card-header-div">
+                        Finance
                       </div>
-                </div>    
+                    </a>
+                  </div>
+                  <div id="collapseFN" class="collapse" data-parent="#accordion5">
+                    <div class="card-body" >
+                    
+                      <div>
+                          <h5 class="text-dark h6">
+                              Team Leader Travel & Expense
+                          </h5>
+                          <div class="rating-color ml-2">
+                            <h6 class="h7">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                              Ind - Gurgaon, HR                      
+                            </h6>
+                            <h6 class="h7">
+                              <i class="fa fa-money" aria-hidden="true"></i>
+                              $130k – $170k                
+                            </h6>
+                          </div>
+                          <span class="comp-btn-area">
+                              <button class="open-comp-btn  ">
+                                <a href="abc.html" target="_blank">
+                                    Apply Now                 
+                                </a> 
+                              </button>
+                            </span>  
+                      </div>
+                      <div class="border-top pt-2 mt-2">
+                          <h5 class="text-dark h6">
+                              Team Leader Travel & Expense
+                          </h5>
+                          <div class="rating-color ml-2">
+                            <h6 class="h7">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                              Ind - Gurgaon, HR                      
+                            </h6>
+                            <h6 class="h7">
+                              <i class="fa fa-money" aria-hidden="true"></i>
+                              $130k – $170k                
+                            </h6>
+                          </div>
+                          <span class="comp-btn-area">
+                            <button class="open-comp-btn  ">
+                              <a href="abc.html" target="_blank">
+                                  Apply Now                
+                              </a> 
+                            </button>
+                          </span>  
+                      </div>
+                      <div class="border-top pt-2 mt-2">
+                          <h5 class="text-dark h6">
+                              Team Leader Travel & Expense
+                          </h5>
+                          <div class="rating-color ml-2">
+                            <h6 class="h7">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                              Ind - Gurgaon, HR                      
+                            </h6>
+                            <h6 class="h7">
+                              <i class="fa fa-money" aria-hidden="true"></i>
+                              $130k – $170k                
+                            </h6>
+                          </div>
+                          <span class="comp-btn-area">
+                            <button class="open-comp-btn  ">
+                              <a href="abc.html" target="_blank">
+                                  Apply Now              
+                              </a> 
+                            </button>
+                          </span>  
+                      </div>  
+                     </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div id="accordion6" class="w-30 ">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" onclick="shiftWidth(this.parentElement.parentElement.parentElement);"  data-toggle="collapse" href="#collapseTECH">
+                <div class="card-header-div">
+                  Technology
+                </div>
+              </a>
+            </div>
+            <div id="collapseTECH" class="collapse" data-parent="#accordion6">
+              <div class="card-body" >
+              
+                <div>
+                    <h5 class="text-dark h6">
+                        Team Leader Travel & Expense
+                    </h5>
+                    <div class="rating-color ml-2">
+                      <h6 class="h7">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Ind - Gurgaon, HR                      
+                      </h6>
+                      <h6 class="h7">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        $130k – $170k                
+                      </h6>
+                    </div>
+                    <span class="comp-btn-area">
+                        <button class="open-comp-btn  ">
+                          <a href="abc.html" target="_blank">
+                              Apply Now                 
+                          </a> 
+                        </button>
+                      </span>  
+                </div>
+                <div class="border-top pt-2 mt-2">
+                    <h5 class="text-dark h6">
+                        Team Leader Travel & Expense
+                    </h5>
+                    <div class="rating-color ml-2">
+                      <h6 class="h7">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Ind - Gurgaon, HR                      
+                      </h6>
+                      <h6 class="h7">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        $130k – $170k                
+                      </h6>
+                    </div>
+                    <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                        <a href="abc.html" target="_blank">
+                            Apply Now                
+                        </a> 
+                      </button>
+                    </span>  
+                </div>
+                <div class="border-top pt-2 mt-2">
+                    <h5 class="text-dark h6">
+                        Team Leader Travel & Expense
+                    </h5>
+                    <div class="rating-color ml-2">
+                      <h6 class="h7">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Ind - Gurgaon, HR                      
+                      </h6>
+                      <h6 class="h7">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        $130k – $170k                
+                      </h6>
+                    </div>
+                    <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                        <a href="abc.html" target="_blank">
+                            Apply Now              
+                        </a> 
+                      </button>
+                    </span>  
+                </div>  
+               </div>
+              </div>
+            </div>
+                  </div>
+                  <div id="accordion7" class="w-30">
+          <div class="card">
+            <div class="card-header">
+              <a class="card-link" onclick="shiftWidth(this.parentElement.parentElement.parentElement);"data-toggle="collapse" href="#collapseOP">
+                <div class="card-header-div">
+                  Operations
+                </div>
+              </a>
+            </div>
+            <div id="collapseOP" class="collapse" data-parent="#accordion7">
+              <div class="card-body" >
+              
+                <div>
+                    <h5 class="text-dark h6">
+                        Team Leader Travel & Expense
+                    </h5>
+                    <div class="rating-color ml-2">
+                      <h6 class="h7">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Ind - Gurgaon, HR                      
+                      </h6>
+                      <h6 class="h7">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        $130k – $170k                
+                      </h6>
+                    </div>
+                    <span class="comp-btn-area">
+                        <button class="open-comp-btn  ">
+                          <a href="abc.html" target="_blank">
+                              Apply Now                 
+                          </a> 
+                        </button>
+                      </span>  
+                </div>
+                <div class="border-top pt-2 mt-2">
+                    <h5 class="text-dark h6">
+                        Team Leader Travel & Expense
+                    </h5>
+                    <div class="rating-color ml-2">
+                      <h6 class="h7">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Ind - Gurgaon, HR                      
+                      </h6>
+                      <h6 class="h7">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        $130k – $170k                
+                      </h6>
+                    </div>
+                    <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                        <a href="abc.html" target="_blank">
+                            Apply Now                
+                        </a> 
+                      </button>
+                    </span>  
+                </div>
+                <div class="border-top pt-2 mt-2">
+                    <h5 class="text-dark h6">
+                        Team Leader Travel & Expense
+                    </h5>
+                    <div class="rating-color ml-2">
+                      <h6 class="h7">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Ind - Gurgaon, HR                      
+                      </h6>
+                      <h6 class="h7">
+                        <i class="fa fa-money" aria-hidden="true"></i>
+                        $130k – $170k                
+                      </h6>
+                    </div>
+                    <span class="comp-btn-area">
+                      <button class="open-comp-btn  ">
+                        <a href="abc.html" target="_blank">
+                            Apply Now              
+                        </a> 
+                      </button>
+                    </span>  
+                </div>  
+               </div>
+              </div>
+            </div>
+                  </div>
+            </div>
+            
+            </div>
           </div>
-        </div>
+    </div>
       </section>
     </main>
     <!-- <img src="./images/1.jpg" alt="" /> -->
@@ -1401,21 +1195,23 @@
                         
         </nav>
         <div class="bg-danger ">Hello</div> -->
+      
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script src="appDEF.js"></script>
+    <script src="app3.js"></script>
   </body>
 </html>

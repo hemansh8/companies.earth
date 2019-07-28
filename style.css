@@ -5,6 +5,7 @@
 
   position: relative;
   font-family: "Karla", sans-serif;
+  font-size: 0.9rem;
 }
 
 #globe {
@@ -72,7 +73,7 @@ option {
   display: flex;
   justify-content: center;
   border: white solid 5px;
-  border-radius: 8%;
+  border-radius: 1%;
   padding: 9px;
   z-index: 2;
   background: white;
@@ -106,19 +107,20 @@ option {
 }
 
 .anchor {
-  padding-top: 20vh;
+  padding-top: 16vh;
+  margin-top: -16vh;
   text-align: justify;
 }
 
 .searchMain {
-  top: 20vh;
+  top: 15vh;
 }
 
 nav {
   position: fixed;
   display: flex;
   width: 100vw;
-  height: 15vh;
+  height: 12vh;
   padding: 5px;
   color: white;
   background: #02bb02;
@@ -171,10 +173,10 @@ nav > div > .search-bar > form {
   background: #003e4d;
 }
 .company-logo {
-  height: 20vh;
-  width: 20vh;
+  height: 10vh;
+  width: 10vh;
   margin: 5px;
-  transform: translateX(200px);
+  transform: translateX(100px);
 }
 .card-title {
   font-size: 2.5rem;
@@ -225,12 +227,12 @@ nav > div > .search-bar > form {
 
 #card-image-place {
   overflow: hidden;
-  height: 40vh;
+  height: 20vh;
   display: flex;
   width: 100%;
   /* background: #00225f; */
   /* border: #00225f solid; */
-  border-radius: 3%;
+  border-radius: 0.5%;
 }
 .sliding {
   /* width: 550px; */
@@ -261,7 +263,7 @@ ol {
   background: #003e4d;
   /* border-radius: 5%; */
   position: sticky;
-  top: 14vh;
+  top: 11vh;
   z-index: 1;
 }
 
@@ -326,34 +328,40 @@ ol > li > a:hover {
     margin: 30px auto;
   }
   nav {
-    height: 22vh;
+    height: 14vh;
     flex-direction: column;
     text-align: center;
   }
   nav > h1,
   .search {
-    width: 80vw;
+    width: 50vw;
     margin: auto;
+    font-size: 1.5rem;
   }
 
   .company-search {
     margin: 10px auto;
-    width: 386px;
+    width: 55vw;
   }
 
   .company-search > span {
     width: 100%;
     margin: 0;
+    height: 5px;
+  }
+  .company-search > span > form {
+    height: 6vh;
   }
   .searchMain {
-    top: 23vh;
+    top: 15vh;
   }
   ol {
-    top: 21vh;
+    top: 13vh;
   }
 
   .anchor {
     padding-top: 26vh;
+    margin-top: -26vh;
   }
 
   .star-rating {

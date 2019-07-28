@@ -13,7 +13,7 @@ function stickyNavigation() {
   //   console.log("navTop = " + navtop);
   console.log("scrollY = " + window.scrollY);
 
-  if (window.scrollY >= 435) {
+  if (window.scrollY >= 300) {
     sticky_list.classList.remove("container");
   } else {
     sticky_list.classList.add("container");
@@ -41,11 +41,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     sections[i++] = e.offsetTop;
     // console.log(e);
   });
-  var offset_value = 425;
+  var offset_value = 400;
   if (window.screen.width < 800) {
-    offset_value = 450;
+    offset_value = 350;
   } else {
-    offset_value = 425;
+    offset_value = 400;
   }
 
   window.onscroll = function() {

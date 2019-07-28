@@ -20,6 +20,14 @@
   background-size: cover;
   background-position: center;
 }
+#tagLine {
+  position: absolute;
+  color: #ccc;
+  top: 10px;
+  left: 5vw;
+  font-size: 1rem;
+  padding: 5px;
+}
 #help {
   position: absolute;
   color: #fff;
@@ -319,6 +327,15 @@ nav > h1:hover {
   }
 }
 @media (max-width: 445px) {
+  #tagLine {
+    top: 33vh;
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+  .home-search {
+    margin: 10px auto;
+  }
   .home > h1 {
     font-size: 2rem;
     margin: 0;

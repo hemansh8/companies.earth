@@ -1,12 +1,12 @@
 var newOrder = 0;
 function shiftWidth(element) {
   console.log(element);
-  if (element.offsetWidth === 280) {
+  if (element.offsetWidth === 220) {
     element.style.width = "100%";
     element.style.transition = "width 0.7s";
     element.style.order = newOrder++;
   } else {
-    element.style.width = "280px";
+    element.style.width = "220px";
     element.style.transition = "width 0.7s";
     element.style.order = "10";
     newOrder--;
@@ -65,10 +65,21 @@ $(document).ready(function() {
   $("body").scrollspy({ target: ".navbar", offset: 100 });
 });
 
-//Back highlight
+//Back highlight and nav collapse
 
 function backgroundHighlight(sec) {
+  if (window.innerWidth < 769) {
+    document.querySelector(".navbar-collapse").style.transform =
+      "translateY(-100%)";
+    document.querySelector(".navbar-collapse").style.transition = "all 0.2s";
+    setTimeout(() => {
+      document.querySelector(".navbar-collapse").classList.remove("show");
+      document.querySelector(".navbar-collapse").style.transform =
+        "translateY(0%)";
+    }, 301);
+  }
   document.querySelector(sec).classList.add("backHighlight");
+
   setTimeout(() => {
     document.querySelector(sec).classList.remove("backHighlight");
   }, 1001);

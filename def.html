@@ -10,10 +10,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -26,7 +23,7 @@
   <body>
     <header
       id="header"
-      class="d-flex justify-content-between align-items-center container	pt-2 border-bottom "
+      class="d-flex justify-content-between align-items-center container	pt-2 border-bottom font-body"
     >
       <h1 class="h5 pl-3">
         companies.EARTH
@@ -54,7 +51,7 @@
     </header>
     <main>
       <nav
-        class="bg-dark sticky-top align-items-center navbar navbar-expand-md  navbar-dark text-light"
+        class="bg-dark sticky-top align-items-center navbar navbar-expand-md  navbar-dark text-light shadow-3 font-head"
       >
         <img src="./images/logo.png" alt="" class="h-75 m-2 rounded d-inline" />
         <h2 class=" d-inline m-2 ">Google</h2>
@@ -67,7 +64,7 @@
         >
           <span class="navbar-toggler-icon  "></span>
         </button>
-        <div class=" bg-dark collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="h-lg-100 bg-dark collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto p-3 text-white navbar-light ">
             <li class="nav-item ">
               <a class="nav-link h4"  href="./index.html">Home</a>
@@ -76,7 +73,7 @@
               <a class="nav-link h4" onclick=' backgroundHighlight(this.getAttribute("href"));' href="#overview">Overview</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link h4" onclick=' backgroundHighlight(this.getAttribute("href"));' href="#products">Products</a>
+                <a class="nav-link h4"  onclick=' backgroundHighlight(this.getAttribute("href"));' href="#products">Products</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link h4" onclick=' backgroundHighlight(this.getAttribute("href"));' href="#stock">Stock</a>
@@ -92,13 +89,13 @@
       </nav>
       <section class=" mx-4 "data-spy="scroll" data-target=".navbar">
         <div class="pt-100 card border-0" id="overview">
-          <div class="card-head border-bottom">
+          <div class="card-head border-bottom font-head">
             <h3 class="h4">
               Overview
             </h3>
           </div>
-          <div class="card-body bg-">
-            <div class="summary text-justify">
+          <div class="card-body font-body">
+            <div class="summary text-justify ">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est,
               similique fugiat dicta exercitationem atque magnam nemo temporibus
               aperiam ipsam ut molestiae, recusandae consequuntur eum beatae
@@ -181,9 +178,9 @@
                   <td>:</td>
                   <td>1643</td>
                 </tr>
-                <tr>
+                <tr >
                   <td><i class=" fa fa-clock-o" aria-hidden="true"></i></td>
-                  <td>Working Hours</td>
+                  <td class="pb-3" >Working Hours</td>
                   <td>:</td>
                   <td>Open 24 hours.</td>
                 </tr>
@@ -192,7 +189,7 @@
           </div>
         </div> 
         <div class="pt-100 card border-0" id="products">
-          <div class="card-head border-bottom">
+          <div class="card-head border-bottom font-head">
             <h3 class="h4">
               Products
             </h3>
@@ -360,8 +357,10 @@
                                             </div>
                                         </td>
                                         <td >
-                                            <div class="rating-color progress">
-                                                <div class=" progress-bar five" role="progressbar" aria-valuenow="70"
+                                          
+                                            <div class="rating-color progress ">
+                                              
+                                                <div class=" progress-bar progress-bar-striped progress-bar-animated five" role="progressbar" aria-valuenow="70"
                                                          aria-valuemin="0" aria-valuemax="100" >
                                                         <span>
                                                              40%
@@ -433,10 +432,10 @@
                                   <div id="home-reviews">
                                     <div class=" text-center">
                                     
-                                      <h4 class="h6">Read what some of our customers are saying</h4>
+                                      <h4 class="h5">Read what some of our customers are saying</h4>
                                     
                                       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner mt-5">
+                                        <div class="carousel-inner mt-3">
                                             <div class="carousel-item active">
                                                 <p class="review-body"><i class="fa fa-quote-left rating-color" aria-hidden="true"></i>		We appreciate the way in which the restoration of our drive thru sign was completed. Like the way YESCO took care of everything from removal to rewiring.<i class="fa fa-quote-right rating-color" aria-hidden="true"></i></p>
                                                 <p class="review-name">Valued Customer at McDonalds/Mac Management Inc.</p>

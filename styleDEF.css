@@ -2,15 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: box-shadow 0.3s;
   /* background: red; */
-  font-family: "Raleway", sans-serif;
+
   font-size: 12px;
 }
 #header {
-  /* z-index: 100; */
+  z-index: 100;
 }
 nav {
   height: 10vh;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  transform: translateZ(5px);
+  z-index: 100;
+}
+.shadow-3 {
+  /* -webkit-box-shadow: 0px 17px 22px 11px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 17px 22px 11px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 17px 22px 11px rgba(0, 0, 0, 0.25); */
 }
 
 main {
@@ -24,9 +35,15 @@ section {
   border-left: white 3vw solid;
   border-right: white 3vw solid;
 }
+.font-body {
+  font-family: "Montserrat", sans-serif;
+}
+.font-head {
+  font-family: "Raleway", sans-serif;
+}
 .pt-100 {
-  padding-top: 70px;
-  margin-top: -70px;
+  padding: 70px 9px 0px 9px;
+  margin-top: -49px;
 }
 #overview {
   z-index: 6;
@@ -67,14 +84,49 @@ section {
     background: #ffffff;
   }
 }
+#accordion .card {
+  margin-top: 3px;
+}
+#accordion .card,
+.w-30 > .card {
+  border: #4e0000cb;
+}
+#accordion .card-body,
+.w-30 .card-body {
+  -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.596);
+}
 .card-head {
-  margin-top: 10px;
+  /* margin-top: 9px; */
+  padding-left: 3px;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  -webkit-box-shadow: inset 0px 3px 3px 0px #000000bf;
+  -moz-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75);
+}
+
+#accordion .card:hover,
+.w-30 .card:hover {
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.5);
+  transform: translateZ(1px);
 }
 .card-body {
   font-size: 0.8rem;
+  padding: 1.5rem;
+  font-family: "Raleway", sans-serif;
+
+  /* font-family: "Montserrat", sans-serif; */
 }
 .table > table {
   font-size: 0.8rem;
+}
+.table td {
+  padding-top: 0.75rem;
+  padding-bottom: 0;
 }
 /* .table > table > tr > td {
   display: flex;
@@ -105,10 +157,11 @@ td > .external {
   color: #fff;
 }
 .card-header {
+  /* margin-top: 3px; */
   background: #4e0000cb;
 }
 .card-header-div:hover {
-  color: #ddd;
+  /* color: #ddd; */
 }
 
 .comp-btn-area {
@@ -116,7 +169,10 @@ td > .external {
   flex-direction: row-reverse;
 }
 .open-comp-btn {
-  padding: 0 5px;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0.5px 0.5px 2px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 6px;
   border: 2px solid #cccbcb;
 }
 .open-comp-btn > a {
@@ -127,6 +183,10 @@ td > .external {
   background: #d7e8ba;
   border: 2px solid #c6e494;
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  transition: box-shadow 0s;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
 }
 .progress {
   width: 200px;
@@ -134,6 +194,14 @@ td > .external {
 }
 .progress-bar {
   background: #343a40;
+}
+.progress-bar:hover {
+  background: #4e0000cb;
+  cursor: pointer;
+}
+.progress:hover {
+  background-color: #e9e1e1d7;
+  transition: background-color 0.3s;
 }
 .fa-star {
   font-size: 0.7rem;
@@ -168,15 +236,16 @@ td > .external {
 }
 
 .w-30 {
-  width: 280px;
+  width: 220px;
   /* margin-top: 10px;
   margin-left: 10px; */
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   transition: order 5s;
   order: 10;
 }
 .h7 {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 590;
 }
 .joblists {
   display: flex;
@@ -193,11 +262,11 @@ td > .external {
   width: 300px;
   background: #f5f5f5;
   overflow-x: scroll;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .scrollbar > img {
-  margin: 10px;
+  margin: 9px;
   height: 300px;
 }
 
@@ -241,12 +310,28 @@ td > .external {
     width: 100%;
     margin: auto;
   }
+  #collapsibleNavbar {
+    -webkit-box-shadow: inset 0px 3px 3px 0px #000000bf;
+    -moz-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.75);
+    /* box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.75); */
+    margin-top: 5px;
+    z-index: -1;
+  }
+  .navbar-nav {
+    z-index: -1;
+  }
 }
 @media (max-width: 1105px) {
   .joblists {
     justify-content: space-around;
   }
   .img-slider {
-    margin-top: 50px;
+    margin-top: 48px;
+  }
+}
+@media (min-width: 768px) {
+  #collapsibleNavbar {
+    height: 100%;
   }
 }
